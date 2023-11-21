@@ -80,10 +80,14 @@ const Element = (props: { Icon: string, text: string, index?: number }) => {
     const { Icon, text, index } = props
 
     const key = (index) ? index : 0
+    const device = useScreenSize()
+
+    const smalltext = (device === "mobile") ? "smallText" : "";
+
     return (
         <div key={key} className="d-flex align-items-center column-gap-3">
             <img src={Icon} alt="Icon" />
-            <p className="m-0">{text}</p>
+            <p className={`m-0 ${smalltext}`}>{text}</p>
         </div>
     )
 }

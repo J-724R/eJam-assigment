@@ -4,11 +4,11 @@ import norton from "../../assets/body/frame1/norton-antivirus-logo.svg"
 
 export default function Logos (){
     return(
-        <div className="w-100 d-flex justify-content-between column-gap-3">
-            <div className="flex-{grow|shrink}-1">
-                <img className="img-fluid flex-{grow|shrink}-1" src={Logo} alt="Clarifon Logo" />
+        <div className="w-100 d-flex justify-content-between">
+            <div className="d-flex">
+                <img className="img-fluid" src={Logo} alt="Clarifon Logo" />
             </div>
-            <div className="d-flex gap-3 flex-{grow|shrink}-1">
+            <div className="d-flex justify-content-between">
                 <img className="img-fluid" src={mcAffe} alt="McAffe Logo" />
                 <img className="img-fluid" src={norton} alt="Norton Logo" />
             </div>

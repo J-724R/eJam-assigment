@@ -7,7 +7,9 @@ import './progressBar.scss'
 export default function ProgressBar() {
     const device = useScreenSize()
     const getParams = 3
-
+    
+    const smalltext = (device === "mobile") ? "smallText" : "";
+    
     return (
         <div className="w-100 d-flex justify-content-between align-items-center">
             {elements.map((element, i) => {
@@ -22,7 +24,7 @@ export default function ProgressBar() {
                             index={i+1}
                             device={device}
                         />
-                        <p className={"m-0 "+boldtext}>{text}</p>
+                        <p className={`m-0 ${boldtext} ${smalltext}`}>{text}</p>
                     </div>
                 )
             })}
