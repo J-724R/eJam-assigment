@@ -16,7 +16,7 @@ export default function ProductOverview() {
         : <POMobile />
 
     return (
-        <div className="">
+        <div className="d-flex flex-column">
             {ProductOverview}
 
             <div>
@@ -69,7 +69,7 @@ function PODesktop() {
 
 function POMobile() {
     return (
-        <div className="d-flex flex-column row-gap-3 ">
+        <div className="d-flex smallText flex-column row-gap-3">
             <div className="d-flex column-gap-3">
                 <div className="po_thumbnail" style={{ maxWidth: "80px", maxHeight: "80px" }}>
                     <img className="img-fluid" src={product.thumbnail} alt="product thumbnail" />
