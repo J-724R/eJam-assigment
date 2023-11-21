@@ -1,5 +1,3 @@
-import clsx from "clsx"
-
 import lock from "../../../assets/body/main/lock1.svg"
 import { useScreenSize } from "../../../lib/hooks/screenSize"
 
