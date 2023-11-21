@@ -1,0 +1,20 @@
+@use '../../../Styles/colors.scss' as color;
+
+.po_thumbnail{
+    background-color: color.$blue;
+    aspect-ratio: 1/1;
+    width: 130px;
+    height: 130px;
+}
+
+.po_promotion{
+    background-color: color.$blue-light;
+}
+
+.po_thumbnail,
+.po_promotion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}

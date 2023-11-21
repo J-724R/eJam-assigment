@@ -1,0 +1,32 @@
+@use '../../../Styles/colors.scss' as color;
+
+.progress_circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.progress_desktop{
+    min-height: 40px;
+    min-width: 40px;
+}
+
+.progress_mobile{
+    min-height: 28px;
+    min-width: 28px;
+}
+
+.progress_green{
+    border: color.$green 2px solid;
+    background-color: color.$green;
+}
+.progress_blue{
+    border: color.$blue 2px solid;
+    background-color: color.$blue;
+    color: white;
+}
+.progress_white{
+    border: color.$blue 2px solid;
+    color: color.$blue;
+}

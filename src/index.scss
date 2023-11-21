@@ -1,0 +1,72 @@
+@use './Styles/colors.scss' as color;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+header,
+footer {
+    background-color: color.$blue-dark;
+    color: white;
+}
+
+img{
+    max-width: 100%;
+}
+
+.center_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueBold{
+    color: color.$blue;
+}
+
+.largeText{
+    font-size: 32px;
+}
+
+.boldText{
+    font-weight: 700;
+}
+
+.button{
+    background-color: color.$greenBtn;
+    color: #FFF;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    border-radius: 50px;
+    font-size: 20px;
+}
+.redFont {
+    color: color.$red;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+.text-underline{
+    text-decoration-line: underline;
+}
+
+.greyText{
+    color: color.$grey
+}
+.fadedText {
+    color: #969696;
+}
+.crossText{
+    text-decoration: line-through;
+}
